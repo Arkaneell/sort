@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your E-Waste</title>
+    <link rel="stylesheet" href="static/sell.css">
+    <script src="static/sell.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="assets/logo/logo1.png" alt="E-Waste AI Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://ez-waste.netlify.app/home">Home</a></li>
+                <li><a href="process.html">How It Works</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="redeem.html">Redeem</a></li>
+                <!--<li><a href="about.html">About us</a></li>-->
+                <li><a href="#">Smart Collection</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="sell-container">
+        <h2>Sell Your E-Waste</h2>
+        <p>List your e-waste for recycling or resale.</p>
+
+        <!-- Form for Selling E-Waste -->
+        <form id="sell-form" action="http://127.0.0.1:3000/" method="POST" enctype="multipart/form-data">
+            <!-- Product Name -->
+            <div class="input-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" name="product-name" placeholder="Enter product name" required>
+            </div>
+
+            <!-- Category -->
+            <div class="input-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="Battery">Battery</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Microwave">Microwave</option>
+                    <option value="PCB">PCB</option>
+                    <option value="Player">Player</option>
+                    <option value="Printer">Printer</option>
+                    <option value="Television">Television</option>
+                    <option value="Washing Machine">Washing Machine</option>
+                    <option value="Mouse">Mouse</option>
+                </select>
+            </div>
+
+            <!-- Condition -->
+            <div class="input-group">
+                <label for="condition">Condition</label>
+                <select id="condition" name="condition" required>
+                    <option value="" disabled selected>Select condition</option>
+                    <option value="working">Working</option>
+                    <option value="non-working">Non-Working</option>
+                    <option value="scrap">Scrap</option>
+                </select>
+            </div>
+
+            <!-- Expected Price -->
+            <div class="input-group">
+                <label for="price">Expected Price (₹)</label>
+                <input type="number" id="price" name="price" placeholder="Enter price" required>
+            </div>
+
+            <!-- Upload Product Image -->
+            <div class="upload-section">
+                <center><label for="imageUpload">Upload Product Image</label></center>
+                <div class="upload-box">
+                    <label for="camera-input" class="upload-btn">
+                        <i class="camera-icon">📷</i> Upload File
+                    </label>
+                    <input type="file" id="camera-input" name="file" accept="image/*" style="display: none;">
+                    <br>
+                    <img id="image-preview" src="" alt="Image Preview" style="display: none; margin-top: 10px; border-radius: 8px; width: 150px; height: 150px; object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Listing</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Quadcore | <a href="#">Privacy Policy</a> | Designed by Quadcore</p>
+    </footer>
+
+</body>
+</html>

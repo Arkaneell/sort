@@ -1,0 +1,10 @@
+Battery
+Keyboard
+Mobile
+Microwave
+Mouse
+PCB
+CD-DVD
+Printer
+Television
+Washing Machine

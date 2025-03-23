@@ -1,0 +1,215 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e8f5e9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #002b36, #004b4e);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+header .logo a {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cfd8dc;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #76c893;
+    transform: translateY(-2px);
+}
+
+/* Main Content Wrapper */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Sell Page Container */
+.sell-container {
+    max-width: 700px; /* Increased width for a larger form */
+    margin: 50px auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.sell-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.sell-container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Ensures labels and inputs are properly aligned */
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+/* Upload Section */
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    border: 2px dashed #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    background: #f9f9f9; /* Light background for visibility */
+}
+
+.upload-box:hover {
+    border-color: #4CAF50;
+}
+
+/* File Input (Hidden by Default) */
+.upload-box input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+/* Upload Button with Camera Icon */
+.upload-box .upload-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.upload-box .upload-btn:hover {
+    background: #2E7D32;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Camera Icon Styling */
+.upload-box .camera-icon {
+    font-size: 18px;
+    margin-right: 8px; /* Space between the icon and text */
+}
+
+/* Preview Image Container */
+.preview-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.preview-container img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+/* Submit Button */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #2E7D32;
+    transform: scale(1.05);
+}
