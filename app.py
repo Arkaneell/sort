@@ -117,6 +117,6 @@ def predict():
 
 if __name__ == '__main__':
     if load_model():
-        app.run(debug=True, port=3000)
+        app.run(debug=True)
     else:
         logging.error("❌ Failed to load model. Exiting...")
