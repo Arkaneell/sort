@@ -17,7 +17,7 @@ async function verifyImageBeforeSubmission() {
     formData.append("category", selectedCategory); // ✅ Added category field
 
     try {
-        const response = await fetch("http://127.0.0.1:3000/", { // ✅ Fixed port
+        const response = await fetch("https://sort-teal.vercel.app/", { // ✅ Fixed port
             method: "POST",
             body: formData
         });
